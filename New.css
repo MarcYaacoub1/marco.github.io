@@ -5,7 +5,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-image: url("1200px-Collège_Saint-Marc.jpg");
+    background-image: url("1200px-Collège_Saint-Marc.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -164,6 +164,9 @@ footer {
     text-decoration: none;
     border-radius: 5px;
   }
+  .project-card .btn:hover{
+    background-color: #3e8e41;
+  }
   
   /* Contact Section */
 .social-links {
@@ -178,6 +181,9 @@ footer {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+  }
+  .social-links a:hover{
+    background-color: #3e8e41;
   }
   
 .social-links a i {
