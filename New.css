@@ -19,7 +19,7 @@ body {
 header {
     background: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
 }
 header h1 {
@@ -54,8 +54,8 @@ header h1 {
     position: absolute;
     top: 5px;
     right: 10px;
-    width: 90px;
-    height: 90px;
+    width: 75px;
+    height: 75px;
 }
 
 main {
