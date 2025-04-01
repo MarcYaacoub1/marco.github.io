@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:wght@300&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Boldonse", sans-serif;
     direction: rtl;
     text-align: right;
     background-color: #f4f4f4;
@@ -14,6 +15,26 @@ body {
     align-items: top;
     justify-content: top;
     height: 100vh;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hide scrollbars while video plays */
+}
+
+#video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999; /* Ensure it's on top */
+}
+
+#intro-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill the screen without distortion */
 }
 
 header {
@@ -54,8 +75,8 @@ header h1 {
     position: absolute;
     top: 5px;
     right: 10px;
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
 }
 
 main {
@@ -133,7 +154,7 @@ footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
     margin-top: 40px;
   }
 /* Projects Section */
@@ -147,7 +168,7 @@ footer {
     background: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgb(40, 167, 69);
+    box-shadow: 0 2px 5px #28a745;
     text-align: center;
   }
   
@@ -176,8 +197,8 @@ footer {
 .social-links a {
     display: inline-block;
     margin: 10px;
-    padding: 10px 20px;
-    background: #0000006b;
+    padding: 10px 20px; 
+    background: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
