@@ -4,27 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>كلية سان مارك</title>
+        <link rel="shortcut icon" href="images (11).jpg" type="image/x-icon">
         <link rel="stylesheet" href="New.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
       </head>
 <body background="1200px-Collège_Saint-Marc.png">
-    <header>
-        <img src="images (11).jpg" class="top-right-logo">
-        <div class="container">
-            <h1>مجلة كلية سان مارك</h1>
-            <p>ِArab</p>
-            <nav>
-                <ul>
-                    <li><a href="#projects">المواضيع</a></li>
-                    <li><a href="#MM">اخر الأخبارعن المدرسة</a></li>
-                    <li><a href="#contact"> للتواصل معنا</a></li>
-                    <li><a href="About the manager.html">عن فريق العمل</a></li>
-                    <li><a href="#Contact Us">لإضافة موضوع</a></li>
+    <div id="video-container">
+        <video id="intro-video" autoplay muted playsinline>
+            <source src="Saint_Marc_V2-vmake.mp4" controls width="640" height="360" allowfullscreen type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="content" style="display: none;">
+
+        <header>
+            <img src="images (11).jpg" alt="Your Image" >
+            <div class="container">
+                <h1>مجلة كلية سان مارك</h1>
+                <p>ِArab</p>
+                <nav>
+                    <ul>
+                        <li><a href="#projects">المواضيع</a></li>
+                        <li><a href="#MM">اخر الأخبارعن المدرسة</a></li>
+                        <li><a href="#contact"> للتواصل معنا</a></li>
+                        <li><a href="About the manager.html">عن فريق العمل</a></li>
+                        <li><a href="#Contact Us">لإضافة موضوع</a></li>
                     
-                </ul>
-            </nav>
-        </div>
-    </header>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
     <main>
         <section id="projects" class="section">
@@ -51,6 +61,8 @@
                 <h2>اخر الأخبارعن المدرسة</h2>
                 <a href="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fvisionsaintmarc%2Fposts%2Fpfbid0Lu7RsHrv1fSbYdk8K1yVm36TrGWMjP9AejN9kAEHv83RFxcSFZgHwBZ2QunmmssSl"><img src="Screenshot 2025-03-04 171052.png" alt="Image Description"></a>
                 <a href="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/ifealexandrie/posts/pfbid036CPowmcbZXhY8CBRBPQJpVjqJDsy28zU28aVnTUWehV1PdRwwLbc6TAwo3wiD6Mhl&show"><img src="Screenshot 2025-03-04 170337.png" alt="Image Description"></a>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FSaintMarcAlexandrie%2Fposts%2Fpfbid0fYrGAY4WrmjbAisbCCJLRSHoSEXYqzUPkQbJ2yhgYvacsCqC6yzV4CVdEEHXMMX1l&show_text=true&width=500" width="500" height="360" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02y26onuESgRYPmoBnt2e9TKnD3UZHzYzHvcSikgG6CDLZC9Thh43eN1hAbMvidivgl%26id%3D100082941660555&show_text=true&width=500" width="500" height="714" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
     </main>
 
@@ -90,7 +102,7 @@
                     display: inline-block;
                     margin: 10px;
                     padding: 10px 20px;
-                    background: #0000006b;
+                    background: #333;
                     color: #fff;
                     text-decoration: none;
                     border-radius: 5px;
@@ -109,5 +121,18 @@
           <p>&copy; 2025 Marc-Tech. All rights reserved.</p>
         </div>
       </footer>
+      </div>
+
+    <script>
+        const video = document.getElementById('intro-video');
+        const videoContainer = document.getElementById('video-container');
+        const content = document.getElementById('content');
+
+        video.addEventListener('ended', () => {
+            videoContainer.style.display = 'none';
+            content.style.display = 'block';
+            document.body.style.overflow = 'auto'; // Re-enable scrollbars
+        });
+    </script>
 </body>
 </html>
